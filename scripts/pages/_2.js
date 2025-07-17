@@ -1,34 +1,6 @@
 let taskData = [];
 
 export function init() {
-
-    const startBtn = document.getElementById("start-btn");
-    const passKey = document.getElementById("passkey");
-
-    startBtn.addEventListener("click", () => {
-        if (startBtn.textContent === "Start" || startBtn.textContent === "Continue") {
-            startBtn.textContent = "Break";
-            startBtn.style.backgroundColor = "#7C7EF6";
-
-            passKey.value = "Stop?"
-            passKey.style.color = "#f94d4dff";
-        } else {
-            startBtn.textContent = "Continue";
-            startBtn.style.backgroundColor = "#01b8faff";
-        }
-    });
-
-    passKey.addEventListener("click", () => {
-        if (startBtn.textContent === "Break" || startBtn.textContent === "Continue") {
-            startBtn.textContent = "Start";
-            startBtn.style.backgroundColor = "#34da92";
-
-            passKey.value = "";
-        }
-    });
-
-    // -------------------------------------------------------------------
-
     const input = document.getElementById("task-input");
     const addBtn = document.getElementById("add-task");
     const list = document.getElementById("task-list");

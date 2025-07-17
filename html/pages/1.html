@@ -1,12 +1,30 @@
-<html>
-  
+<link rel="stylesheet" href="../../css/pages/1.css" />
+<link rel="stylesheet" href="../../css/pages/2.css" />
+
 <body>
-  <h1>Hello!</h1>
-  <button id="tab-group-dropdown">Show Tab Groups</button>
-  <button id="create-group">Create a new tab group</button>
-  <button id="close-group">Close the current tab group</button>
-  <button id="new-session">Start a new session</button>
-  <script src="../../scripts/pages/1.js"></script>
+    <div id="locked-in">
+        <div id="title1">Time</div>
+        <div id="timer">
+            <input id="hours" type="number" min="0" max="24" step="1" placeholder="00"/>
+            <div id="colon">:</div>
+            <input id="minutes" type="number" min="0" max="59" step="1" placeholder="00"/>
+            <div id="colon">:</div>
+            <input id="seconds" type="number" min="0" max="59" step="1" placeholder="00"/>
+        </div>
+        <div id="user-starter-interface">
+            <input id="passkey" placeholder="PassKey"/>
+            <button id="start-btn">Start</button>
+        </div>
+    </div>
 </body>
 
-</html>
+<body>
+    <div id="task-container">
+        <div id="task-title">Task Manager</div>
+        <div id="task-input-bar">
+            <input type="text" id="task-input" placeholder="Enter a new task..." />
+            <button id="add-task">+</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+</body>

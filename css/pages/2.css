@@ -1,0 +1,58 @@
+#task-container {
+    width: 380px;
+    background: #cbcbcb;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#task-title {
+    padding: 3px;
+    font-size: 30px;
+}
+
+#task-input-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 6px;
+    font-size: 14px;
+}
+
+#add-task {
+    padding: 6px 12px;
+    font-size: 18px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.task-item input[type="text"] {
+    flex: 1;
+    font-size: 14px;
+    padding: 4px;
+    border: 1px solid #ccc;
+}
+
+.remove-task {
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}

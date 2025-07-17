@@ -1,56 +1,11 @@
-<style>
-    #task-container {
-        padding: 10px;
-        font-family: sans-serif;
-    }
+<link rel="stylesheet" href="../../css/pages/2.css" />
 
-    #task-input-bar {
-        display: flex;
-        gap: 8px;
-        margin-bottom: 12px;
-    }
-
-    #task-input {
-        flex: 1;
-        padding: 6px;
-        font-size: 14px;
-    }
-
-    #add-task {
-        padding: 6px 12px;
-        font-size: 18px;
-    }
-
-    #task-list {
-        list-style: none;
-        padding: 0;
-    }
-
-    .task-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin-bottom: 8px;
-    }
-
-    .task-item input[type="text"] {
-        flex: 1;
-        font-size: 14px;
-        padding: 4px;
-        border: 1px solid #ccc;
-    }
-
-    .remove-task {
-        font-weight: bold;
-        color: red;
-        cursor: pointer;
-    }
-</style>
-
-<div id="task-container">
-    <div id="task-input-bar">
-        <input type="text" id="task-input" placeholder="Enter a new task..." />
-        <button id="add-task">+</button>
+<body>
+    <div id="task-container">
+        <div id="task-input-bar">
+            <input type="text" id="task-input" placeholder="Enter a new task..." />
+            <button id="add-task">+</button>
+        </div>
+        <ul id="task-list"></ul>
     </div>
-    <ul id="task-list"></ul>
-</div>
+</body>

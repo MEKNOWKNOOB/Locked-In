@@ -2,40 +2,24 @@
 
 <html>
 
-<head>
-    <title>Locked In</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: sans-serif;
-        }
-
-        #top-bar {
-            background: #222;
-            color: white;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #page-buttons button {
-            margin-left: 5px;
-        }
-
-        #content {
-            padding: 10px;
-        }
-    </style>
-</head>
-
 <body>
     <div id="top-bar">
-        <div>Page: <span id="current-page">1</span></div>
-        <div id="page-buttons">
-            <button data-page="1">Page 1</button>
-            <button data-page="2">Page 2</button>
-            <button data-page="3">Page 3</button>
+        <div id="left-section">
+            <div id="page-buttons">
+                <button id="1">1</button>
+                <button id="2">2</button>
+                <button id="3">3</button>
+            </div>
+        </div>
+
+        <div id="center-section">
+            <div id="title">Locked In</div>
+        </div>
+
+        <div id="right-section">
+            <div id="page-buttons">
+                <button id="4">4</button>
+            </div>
         </div>
     </div>
     <div id="content"></div>
