@@ -77,7 +77,7 @@ function addDomainManually() {
     // If a full URL is pasted, extract the hostname
     try {
         if (!domain.startsWith('http://') && !domain.startsWith('https://')) {
-            domain = 'http://' + domain;
+            domain = 'https://' + domain;
         }
         const url = new URL(domain);
         domain = url.hostname;
@@ -142,9 +142,9 @@ function importDomainsFromFile() {
             .map(domain => {
                 try {
                     let cleanDomain = domain;
-                    // If the line doesn't start with http/https, add http:// to the beginning
+                    // If the line doesn't start with http/https, add https:// to the beginning
                     if (!cleanDomain.startsWith('http://') && !cleanDomain.startsWith('https://')) {
-                        cleanDomain = 'http://' + cleanDomain;
+                        cleanDomain = 'https://' + cleanDomain;
                     }
                     return new URL(cleanDomain).hostname;
                 } catch (e) {
