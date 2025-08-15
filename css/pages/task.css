@@ -14,7 +14,7 @@
     border-radius: 4px;
 }
 
-#add-task {
+#add-task, #add-timed-task {
     padding: 8px 16px;
     font-size: 18px;
     background-color: #007bff;
@@ -24,7 +24,7 @@
     cursor: pointer;
 }
 
-#add-task:hover {
+#add-task:hover, #add-timed-task:hover {
     background-color: #0056b3;
 }
 
@@ -107,4 +107,8 @@
 .subtask-list {
   flex-basis: 100%;
   margin-left: 20px;
+}
+
+.deadline-input {
+    margin-left: 10px;
 }
